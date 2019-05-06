@@ -1,0 +1,221 @@
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@font-face {
+    font-family: "PT-Sans-Normal";
+    src: url("~assets/fonts/pt_sans/PT_Sans-Web-Regular.ttf");
+}
+
+@font-face {
+    font-family: "PT-Sans-Bold";
+    src: url("~assets/fonts/pt_sans/PT_Sans-Web-Bold.ttf");
+}
+
+@font-face {
+    font-family: "PT-Sans-Bold-Italic";
+    src: url("~assets/fonts/pt_sans/PT_Sans-Web-BoldItalic.ttf");
+}
+
+$color-bg: #0E0B16;
+$color-bg-2: transparent;
+$color-bg-3: #1A1722;
+$color-text: rgba(255, 255, 255, 0.65);
+$color-text-2: rgb(252,252,252);
+$color-details: #57BC90;
+$color-details-2: #326353;
+$color-details-3: #0ae69c;
+$color-details-4: #17ffb2;
+$color-sider: #F0F2F5;
+
+.bold {
+  font-family: "PT-Sans-Bold"!important;
+}
+
+.bold-italic {
+  font-family: "PT-Sans-Bold-Italic"!important;
+}
+
+.transition-300 {
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+.transition-150 {
+  -webkit-transition: all .150s ease-out;
+  -moz-transition: all .150s ease-out;
+  -o-transition: all .150s ease-out;
+  transition: all .150s ease-out;
+}
+
+html, html > * {
+  background-color: $color-bg!important;
+}
+
+.ant-menu-dark .ant-menu-inline.ant-menu-sub {
+  background-color: $color-bg!important;
+  background: $color-bg!important;
+}
+
+.ant-menu-dark {
+  background-color: $color-bg!important;
+  background: $color-bg!important;
+  color: $color-text!important;
+  border-bottom: 1px solid $color-details-2!important;
+
+  .ant-menu-item.ant-menu-item-selected {
+    background: none!important;
+  }
+}
+
+.ant-layout-sider {
+  background: $color-bg!important;
+  * {
+    color: $color-text!important;
+  }
+
+  span.ant-tree-node-content-wrapper {
+    &:hover {
+      background: none;
+    }
+  }
+
+  .ant-tree-checkbox-checked .ant-tree-checkbox-inner {
+  background-color: $color-details-3!important;
+  border-color: $color-details-3!important;
+}
+
+.ant-tree-checkbox-indeterminate .ant-tree-checkbox-inner:after {
+  background-color: $color-details-3!important;
+}
+
+.ant-tree-checkbox-inner {
+  background-color: $color-bg!important;
+
+  &:hover {
+    border-color: $color-details-3!important;
+  }
+}
+}
+/*
+html *:not([class^="ant-"]) {
+  color: rgb(252,252,252);
+}
+*/
+html a {
+  color: $color-details;
+
+  &:hover {
+    color: $color-details-3;
+  }
+}
+
+.match-list-item {
+  background-color: $color-bg-2;
+}
+
+.main-container {
+  background-color: $color-bg;
+}
+
+.details-color {
+  color: $color-details!important;
+}
+
+.odds {
+  background-color: $color-details;
+}
+
+.ant-btn-default {
+  span {
+    color: $color-bg!important;
+  }
+  &:hover {
+    border-color: $color-details!important;
+  }
+}
+
+.ant-card {
+  background: $color-details!important;
+  color: $color-text!important;
+}
+
+.ant-dropdown-menu-dark {
+  background: $color-details!important;
+  .ant-dropdown-menu-item {
+    a {
+      color: $color-text!important;
+    }
+  }
+}
+
+.ant-select-selection-selected-value {
+  color: rgba(0, 0, 0, 0.65)!important;
+}
+
+.ant-btn-primary {
+  background-color: $color-details!important;
+  border-color: $color-details!important;
+  color: $color-text!important;
+  &:hover {
+    background-color: $color-details-3!important;
+    border-color: $color-details-3!important;
+  }
+}
+
+.ant-modal-content {
+  background-color: $color-text-2;
+  .ant-modal-header {
+    background-color: $color-text-2;
+  }
+  .ant-modal-body {
+    color: $color-bg!important;
+    & > * {
+      color: $color-bg!important;
+    }
+
+    span {
+      color: $color-bg!important;
+    }
+  }
+}
+
+.side-menu {
+  height: calc(100vh - 66px)!important;
+  padding-top: 5px!important;
+  position: fixed!important;
+  width: 220px!important;
+  overflow-x: hidden;
+  overflow-y: auto;
+  // border-right: 1px solid $color-details-2!important;
+}
+
+.side-menu-left {
+  // border-left: 1px solid $color-details-2!important;
+}
+
+.ant-input {
+  &:focus {
+    border-color: $color-details-3!important;
+  }
+  &:hover {
+    border-color: $color-details-3!important;
+  }
+}
+
+.ant-modal-header {
+  .ant-modal-title {
+    text-align: center;
+  }
+}
+
+.ant-modal-close {
+  * {
+    color: $color-bg;
+  }
+}
